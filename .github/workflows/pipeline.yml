@@ -17,4 +17,4 @@ jobs:
           wait-on: 'http://localhost:3000'
           record: true
         env:
-        CYPRESS_RECORD_KEY: da25fcb7-02f8-4a1d-b18c-039bb9d54f81
+          CYPRESS_RECORD_KEY: da25fcb7-02f8-4a1d-b18c-039bb9d54f81
