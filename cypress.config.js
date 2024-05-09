@@ -8,7 +8,7 @@ module.exports = {
     reporterOptions: {
       reportDir: 'mochawesome-report',
       overwrite: false,
-      html: true,
+      html: false,
       json: false
     },
     setupNodeEvents(on, config) {
