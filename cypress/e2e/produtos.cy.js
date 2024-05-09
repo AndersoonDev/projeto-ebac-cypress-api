@@ -6,7 +6,7 @@ describe('Teste da funcionalidade Produtos', () => {
 
    let token
 
-   before(() => {
+   beforeEach(() => {
       cy.token('fulano@qa.com.br', 'teste').then(tkn => {
          token = tkn
       })
