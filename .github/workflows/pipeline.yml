@@ -1,0 +1,18 @@
+name: Cypress Tests
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1, 2]
+        steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          record: true
+        env:
+        CYPRESS_RECORD_KEY: da25fcb7-02f8-4a1d-b18c-039bb9d54f81
