@@ -20,23 +20,23 @@ describe('Testes da Funcionalidade Usuários', () => {
     })
   });
 
-  it('Deve cadastrar um usuário Anderson com sucesso', () => {
-    // let nome = `Usuario ${Math.random().toString(20).substring(10)}`
-    // let email = `email-${Math.random().toString(20).substring(10)}@qa.com`
-    cy.request({
-      method: 'POST',
-      url: 'usuarios',
-      body: {
-        "nome": 'Anderson Silva',
-        "email": 'anderson1@qa.com.br',
-        "password": "teste",
-        "administrador": "true"  
-      }
-      }).then(response => {
-        expect(response.status).to.equal(201)
-        expect(response.body.message).to.equal('Cadastro realizado com sucesso')
-      })
-  }); 
+  // it('Deve cadastrar um usuário Anderson com sucesso', () => {
+  //   // let nome = `Usuario ${Math.random().toString(20).substring(10)}`
+  //   // let email = `email-${Math.random().toString(20).substring(10)}@qa.com`
+  //   cy.request({
+  //     method: 'POST',
+  //     url: 'usuarios',
+  //     body: {
+  //       "nome": 'Anderson Silva',
+  //       "email": 'anderson1@qa.com.br',
+  //       "password": "teste",
+  //       "administrador": "true"  
+  //     }
+  //     }).then(response => {
+  //       expect(response.status).to.equal(201)
+  //       expect(response.body.message).to.equal('Cadastro realizado com sucesso')
+  //     })
+  // }); 
 
   it('Deve cadastrar um usuário com sucesso', () => {
     let nome = `Usuario ${Math.random().toString(20).substring(10)}`
