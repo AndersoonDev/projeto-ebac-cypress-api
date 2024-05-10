@@ -57,8 +57,7 @@ describe('Teste da funcionalidade Produtos', () => {
       cy.cadastrarProduto(token, 'Produto novo 1', 250, 'Descrição do produto novo', 500)
        .then((response) =>{
            expect(response.status).to.equal(400)
-           expect(response.body.message).to.equal('Já existe produto com esse nome')
-           
+           expect(response.body.message).to.equal('Já existe produto com esse nome')           
        }) 
    });
 
