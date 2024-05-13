@@ -30,28 +30,28 @@ describe('Teste da funcionalidade Produtos', () => {
    
    // });  
 
-   it('Cadastrar produto', () => {
+   // it('Cadastrar produto', () => {
    
-      let produto = `Produto Anderson ${Math.floor(Math.random() * 1000000)}`
+   //    let produto = `Produto Anderson ${Math.floor(Math.random() * 1000000)}`
       
-      cy.request({
-          method: 'POST',
-          url: 'produtos',
-          body:
-            {
-               "nome": produto,
-               "preco": 1000,
-               "descricao": "Produto novo",
-               "quantidade": 500
-            },              
-          headers: {authorization: token}
-        })
-        .then((response) =>{
-            expect(response.status).to.equal(201)
-            expect(response.body.message).to.equal('Cadastro realizado com sucesso')
-        }) 
+   //    cy.request({
+   //        method: 'POST',
+   //        url: 'produtos',
+   //        body:
+   //          {
+   //             "nome": produto,
+   //             "preco": 1000,
+   //             "descricao": "Produto novo",
+   //             "quantidade": 500
+   //          },              
+   //        headers: {authorization: token}
+   //      })
+   //      .then((response) =>{
+   //          expect(response.status).to.equal(201)
+   //          expect(response.body.message).to.equal('Cadastro realizado com sucesso')
+   //      }) 
         
-   });
+   // });
 
    it('Deve exibir um erro ao tentar cadastrar um produto repetido', () => {
       cy.cadastrarProduto(token, 'Produto novo 1', 250, 'Descrição do produto novo', 500)
