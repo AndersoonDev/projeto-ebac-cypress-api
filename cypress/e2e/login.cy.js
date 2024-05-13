@@ -7,7 +7,7 @@ describe('Login - Testes da API ServeRest', () => {
             method: 'POST',
             url: 'login',
             body:{
-                "email": "anderson1@qa.com.br",
+                "email": "teste@qa.com",
                 "password": "teste"
             },
         }).then((response) =>{

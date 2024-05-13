@@ -7,7 +7,7 @@ describe('Teste da funcionalidade Produtos', () => {
    let token
 
    before(() => {
-      cy.token('anderson1@qa.com.br', 'teste').then(tkn => {
+      cy.token('teste@qa.com', 'teste').then(tkn => {
          token = tkn
       })
    })
