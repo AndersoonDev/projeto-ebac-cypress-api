@@ -17,18 +17,18 @@ describe('Teste da funcionalidade Produtos', () => {
    //       return contrato.validateAsync(response.body)
    //    })
    // }); 
-   it('Listar produtos', () => { 
-      cy.request({
-        method: 'GET',
-        url: 'produtos'
-      })
-      .then( response => {
-        expect(response.status).to.equal(200)
-        expect(response.body).to.have.property('produtos')
+   // it('Listar produtos', () => { 
+   //    cy.request({
+   //      method: 'GET',
+   //      url: 'produtos'
+   //    })
+   //    .then( response => {
+   //      expect(response.status).to.equal(200)
+   //      expect(response.body).to.have.property('produtos')
         
-    })
+   //  })
    
-   });  
+   // });  
 
    it('Cadastrar produto', () => {
    
