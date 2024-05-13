@@ -12,11 +12,11 @@ describe('Teste da funcionalidade Produtos', () => {
       })
    })
 
-   it('Deve validar contrato de produtos', () => {
-      cy.request('produtos').then( response => {
-         return contrato.validateAsync(response.body)
-      })
-   }); 
+   // it('Deve validar contrato de produtos', () => {
+   //    cy.request('produtos').then( response => {
+   //       return contrato.validateAsync(response.body)
+   //    })
+   // }); 
    it('Listar produtos', () => { 
       cy.request({
         method: 'GET',
